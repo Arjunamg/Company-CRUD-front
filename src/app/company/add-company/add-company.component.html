@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Company Adding Form : You can Add an Companies detail information into this EMS Apps.</div>
+    <div class="panel-body">
+        <form class="form-horizontal" (submit)="addCompany()">
+            <div class="form-group">
+                <label for="emp_name" class="col-sm-2 control-label">Company Name : </label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" [(ngModel)]="company.name" name="cName">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="position" class="col-sm-2 control-label">Company Address : </label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" [(ngModel)]="company.address" name="cAddress">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="department" class="col-sm-2 control-label">Company City : </label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" [(ngModel)]="company.city" name="cCity">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <a class="btn btn-info" (click)="goBack()">Cancel</a>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</div>
